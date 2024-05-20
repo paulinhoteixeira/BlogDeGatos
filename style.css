@@ -8,10 +8,21 @@
   font-size: 62.5%;
 }
 
+body{
+  width: 100%;
+}
+
+body,
+input,
+input::placeholder {
+  font-family: "Mulish", sans-serif;
+}
+
 header {
   background-color: #065e7c;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   padding: 1.2rem 2.8rem;
 }
 
@@ -22,6 +33,7 @@ header img {
 }
 
 input {
+  width: 60%;
   border-radius: 4px;
   border: none;
   padding: 1.6rem;
@@ -36,4 +48,76 @@ input::placeholder {
   font-size: 1.6rem;
   font-style: normal;
   line-height: 1.6rem;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+main section {
+  padding: 3.2rem 2.8rem;
+}
+
+main section img {
+  width: 4rem;
+  height: 4rem;
+  margin: 0.8rem 0 3.2rem 0;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+}
+
+main p {
+  font-family: Mulish;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+aside {
+  padding: 0 2.8rem 3.2rem;
+}
+
+aside h2 {
+  margin-bottom: 3.2rem;
+}
+
+.card {
+  display: flex;
+  margin-bottom: 3.2rem;
+  gap: 1.6rem;
+}
+
+.card img {
+  width: 15rem;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.card p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+
+footer {
+  background: #387e96;
+  text-align: center;
+  padding: 1.6rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: normal;
 }
