@@ -24,6 +24,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 2.8rem;
+  grid-area: header;
+
 }
 
 header img {
@@ -48,6 +50,10 @@ input::placeholder {
   font-size: 1.6rem;
   font-style: normal;
   line-height: 1.6rem;
+}
+
+main{
+  grid-area: main;
 }
 
 main img {
@@ -80,6 +86,7 @@ main p {
 
 aside {
   padding: 0 2.8rem 3.2rem;
+  grid-area: aside;
 }
 
 aside h2 {
@@ -120,4 +127,44 @@ footer {
   font-size: 1.6rem;
   font-weight: 600;
   line-height: normal;
+  grid-area: footer;
+}
+
+@media (min-width:801px) {
+  body{
+    display: grid;
+    grid-template-areas: 
+      "header header header header"
+      "main main main aside"
+      "footer footer footer footer";
+  }
+  header{
+    padding: 1.2rem 11.2rem;
+  }
+
+  input{
+    width: 90%;
+  }
+
+  main{
+    padding: 4rem 0 0 11.2rem; 
+    margin-right: 3.4rem;
+  }
+
+  main section {
+    padding: 0;
+  }
+
+  aside{
+    padding: 4rem 11.2rem 0 0; 
+
+  }
+  aside h2 {
+    margin-bottom: 3.2rem;
+    line-height: 2.4rem;
+  }
+
+  footer{
+    margin-top: 4rem;
+  }
 }
