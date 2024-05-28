@@ -155,6 +155,27 @@ footer {
     padding: 0;
   }
 
+  #title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.2rem 0 3.2rem;
+  }
+
+  #title h2{
+    line-height: 2.4rem;
+    margin: 0;
+  }
+
+  #title img{
+    margin: 0;
+  }
+
+  #rating{
+    display: flex;
+    gap: 1.2rem;
+  }
+
   aside{
     padding: 4rem 11.2rem 0 0; 
 
